@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HomePage"
+    tools:ignore="UseCompoundDrawables">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#FEBA5C"
+        android:gravity="center"
+        android:text="Welcome to Anna-Kshetra"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="362dp"
+        app:srcCompat="@drawable/app_logo" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:src="@drawable/poor_people"
+        app:srcCompat="@drawable/poor_people" />
+
+    <Button
+        android:id="@+id/donate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Donate"
+        android:textColor="@color/black"
+        android:textColorHint="@color/purple_500"
+        app:iconTint="@color/purple_700"
+        app:rippleColor="@color/purple_500" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ready To Distribute"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/getfood"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Get Food"
+        android:textColor="@color/black"
+        android:textColorHint="@color/purple_500"
+        app:iconTint="@color/purple_700"
+        app:rippleColor="@color/purple_500" />
+
+</LinearLayout>

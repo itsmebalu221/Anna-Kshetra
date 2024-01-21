@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "732427048410",
+    "project_id": "annakshetra",
+    "storage_bucket": "annakshetra.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:732427048410:android:2ded959f71340c26f21ce3",
+        "android_client_info": {
+          "package_name": "com.bv.annakshetra"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWyO_BcGxCv2p2G2iNAcybCFAfL6o8QKc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
