@@ -15,7 +15,14 @@ import com.google.firebase.database.FirebaseDatabase;
 
 public class Donate extends AppCompatActivity {
 
-    EditText name;
+    EditText Hname;
+    EditText Dname;
+    EditText Dphone;
+    EditText Fnum;
+    EditText Haddress;
+    EditText Hlink;
+    EditText Ftime;
+
     Button submit;
     DatabaseReference DonorDatabase;
 
@@ -24,7 +31,14 @@ public class Donate extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_donate);
-        name = findViewById(R.id.name);
+        Hname = findViewById(R.id.Hname);
+        Dname = findViewById(R.id.Dname);
+        Dphone = findViewById(R.id.Dphone);
+        Fnum = findViewById(R.id.Fnum);
+        Haddress = findViewById(R.id.Haddress);
+        Hlink = findViewById(R.id.Hlink);
+        Ftime = findViewById(R.id.Ftime);
+        //button
         submit = findViewById(R.id.submit);
 
         DonorDatabase = FirebaseDatabase.getInstance().getReference().child("Donations");
@@ -37,9 +51,16 @@ public class Donate extends AppCompatActivity {
 
         }
     private void insertDonorData(){
-        String Name = name.getText().toString();
+        String NameOfHotel = Hname.getText().toString();
+        String NameOfDonor = Dname.getText().toString();
+        String Phonenum = Dphone.getText().toString();
+        String HotelAddress = Haddress.getText().toString();
+        String MapLink = Hlink.getText().toString();
+        String FoodNum = Fnum.getText().toString();
+        String FoodTime = Ftime.getText().toString();
 
-        DonorData donorData = new DonorData(Name);
+
+        DonorData donorData = new DonorData(NameOfHotel,NameOfDonor,Phonenum,HotelAddress,MapLink,FoodNum,FoodTime);
         DonorDatabase.push().setValue(donorData);
         Toast.makeText(this, "Updated", Toast.LENGTH_SHORT).show();
 

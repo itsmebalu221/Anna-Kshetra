@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
     android:orientation="vertical"
     tools:context=".Donate">
 
@@ -11,22 +12,100 @@
         android:id="@+id/textView9"
         android:layout_width="match_parent"
         android:layout_height="42dp"
-        android:text="Fill the form" />
+        android:background="@color/purple_500"
+        android:gravity="center"
+        android:text="Please Fill the Food Details to Donate"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textStyle="bold" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="26dp" />
 
     <EditText
-        android:id="@+id/name"
-        android:layout_width="wrap_content"
+        android:id="@+id/Hname"
+        android:layout_width="348dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:ems="10"
+        android:hint="Name of the Hotel / restaurant"
         android:inputType="text"
-        android:text="Name"
         tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/Dname"
+        android:layout_width="348dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Name of the Donor"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/Dphone"
+        android:layout_width="348dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Donor Mobile Number"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/Fnum"
+        android:layout_width="347dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Food Available for ( No. of Persons )"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/Haddress"
+        android:layout_width="348dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Address of Hotel / Restaurant"
+        android:inputType="textMultiLine" />
+
+    <EditText
+        android:id="@+id/Hlink"
+        android:layout_width="348dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Google Map Link"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/Ftime"
+        android:layout_width="348dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Food can be preserved for ( Hours )"
+        android:inputType="text" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="36dp" />
 
     <Button
         android:id="@+id/submit"
-        android:layout_width="wrap_content"
+        android:layout_width="348dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:text="Button" />
+        android:text="Donate Now"
+        android:textColor="#000000"
+        app:iconTint="#000000" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="64dp" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="348dp"
+        android:layout_height="37dp"
+        android:background="@color/purple_500"
+        android:gravity="center"
+        android:text="Thank You For Donating"
+        android:textColor="#000000"
+        android:textStyle="bold" />
 </LinearLayout>
